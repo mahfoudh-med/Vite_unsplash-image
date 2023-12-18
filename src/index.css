@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+
+:root {
+  --bg-color: rgba(128, 128, 128, 0.603);
+  --text-color: black;
+
+  /* dark mode setup */
+  --darkMode-bg-color: #333;
+  --darkMode-text-color: #f6f6f6;
+}
+
+body.dark-mode {
+  background-color: var(--darkMode-bg-color);
+  color: var(--darkMode-text-color);
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+@tailwind utilities;
